@@ -1,0 +1,48 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.container {
+    text-align:center;color: antiquewhite;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto; color: rgb(0, 0, 0);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.game-options, .game-info, .score-board {
+    margin: 20px 0; color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

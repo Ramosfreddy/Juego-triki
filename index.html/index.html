@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de TRIKI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de TRIKI</h1>
+        <div class="game-options">
+            <button id="player-vs-player">Jugador vs Jugador</button>
+            <button id="player-vs-ai">Jugador vs Máquina</button>
+        </div>
+        <div class="game-board" id="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="game-info">
+            <h2 id="game-status"></h2>
+            <button id="restart-btn">Reiniciar Juego</button>
+        </div>
+        <div class="score-board">
+            <h2>Estadísticas</h2>
+            <p id="most-wins">Jugador con más victorias: </p>
+            <p id="most-losses">Jugador con más derrotas: </p>
+            <p id="closed-games">Juegos cerrados: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
